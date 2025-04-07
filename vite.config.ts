@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
+import parser from 'glog-parser'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(),parser()],
   base: '',
   server: {
     port: 3000,
